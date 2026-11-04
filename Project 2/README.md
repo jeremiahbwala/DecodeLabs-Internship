@@ -119,3 +119,112 @@ This project demonstrates basic backend development concepts, including:
 ---
 
 **Developed as part of the DecodeLabs Full Stack Development Internship — Project 2.**
+
+# Project 3 – Database Integration & CRUD API
+
+A Task Management REST API built with Node.js, Express.js, MongoDB and Mongoose as part of the DecodeLabs Full Stack Development Internship.
+
+## Overview
+
+This project extends the backend API developed in Project 2 by integrating MongoDB for persistent data storage.
+
+It allows users to create, retrieve, update and delete tasks through RESTful API endpoints.
+
+## Technologies Used
+
+- Node.js – JavaScript runtime environment
+- Express.js – Backend web framework
+- MongoDB Atlas – Cloud database
+- Mongoose – MongoDB object data modeling
+- dotenv – Environment variable management
+
+## Features
+
+- MongoDB Atlas database connection
+- Task schema and Mongoose model
+- Create new tasks
+- Retrieve all tasks
+- Retrieve individual tasks by ID
+- Update existing tasks
+- Delete tasks
+- Input validation
+- Error handling
+- Persistent database storage
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/` | API welcome message |
+| GET | `/api/tasks` | Retrieve all tasks |
+| GET | `/api/tasks/:id` | Retrieve a single task |
+| POST | `/api/tasks` | Create a new task |
+| PUT | `/api/tasks/:id` | Update a task |
+| DELETE | `/api/tasks/:id` | Delete a task |
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+### 2. Navigate into the project
+
+```bash
+cd YOUR_REPOSITORY_NAME
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file in the project root:
+
+```env
+PORT=3000
+MONGODB_URI=your_mongodb_connection_string
+```
+
+Replace the connection string with your MongoDB Atlas URI.
+
+### 5. Start the server
+
+```bash
+node server.js
+```
+
+The server will run at:
+
+`http://localhost:3000`
+
+## Testing
+
+The API was tested using Postman/Thunder Client to verify:
+
+- Successful task creation
+- Retrieval of all tasks
+- Retrieval of individual tasks
+- Successful task updates
+- Successful task deletion
+- Invalid input handling
+- Invalid and nonexistent task ID handling
+- Data persistence after server restart
+
+## Learning Outcomes
+
+- Understanding MongoDB database integration
+- Working with Mongoose schemas and models
+- Implementing CRUD operations
+- Understanding asynchronous database operations
+- Handling API validation and errors
+- Managing environment variables and database credentials
+
+## Internship
+
+**DecodeLabs Full Stack Development Internship – Project 3**
